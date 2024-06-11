@@ -1,6 +1,7 @@
 package observer.ejercicio.database;
 
-import ejercicio1.model.ParticipantesDatabaseService;
+
+import observer.ejercicio.model.ParticipantesDatabaseService;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

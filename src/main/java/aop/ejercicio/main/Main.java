@@ -1,12 +1,11 @@
 package ejercicio3.main;
+
 import ejercicio3.model.ConcursoManager;
 import ejercicio3.persistent.ConcursoJdbcDAO;
-import ejercicio3.persistent.ConcursoTxtDAO;
 import ejercicio3.persistent.InscripcionJdbcDAO;
-import ejercicio3.persistent.InscripcionTxtDAO;
 import ejercicio3.ui.RadioCompetition;
 
-import javax.swing.SwingUtilities;
+import javax.swing.*;
 
 public class Main {
 

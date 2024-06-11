@@ -1,6 +1,7 @@
 package observer.ejercicio.ui;
 
-import ejercicio1.model.AgregarParticipante;
+
+import observer.ejercicio.model.AgregarParticipante;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;

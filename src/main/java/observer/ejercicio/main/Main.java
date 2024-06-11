@@ -1,8 +1,8 @@
 package observer.ejercicio.main;
 
-import ejercicio1.database.JdbcDatabaseParticipantes;
-import ejercicio1.model.AgregarParticipante;
-import ejercicio1.ui.VentanaAgregarParticipante;
+import observer.ejercicio.database.JdbcDatabaseParticipantes;
+import observer.ejercicio.model.AgregarParticipante;
+import observer.ejercicio.ui.VentanaAgregarParticipante;
 
 import java.awt.*;
 
