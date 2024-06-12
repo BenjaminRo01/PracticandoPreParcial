@@ -1,5 +1,5 @@
 package decorator.ejercicio.model;
 
-abstract class PorcionAdicional implements Combo{
+abstract class PorcionAdicional implements Combo {
 
 }
