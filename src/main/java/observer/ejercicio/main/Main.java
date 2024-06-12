@@ -16,6 +16,8 @@ public class Main {
         EventQueue.invokeLater(() -> {
             try {
                 String from = "from@example.com";
+                String username = "c276e21b0ab06a";
+                String password = "3416ef01d5a717";
                 String host = "sandbox.smtp.mailtrap.io";
                 String port = "2525";
                 var agregarParticipante = new AgregarParticipante(
