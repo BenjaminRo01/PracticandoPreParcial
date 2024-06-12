@@ -12,6 +12,7 @@ public class VentanaAgregarParticipante extends JFrame{
     private JTextField nombre;
     private JTextField telefono;
     private JTextField region;
+    private JTextField email;
     private final AgregarParticipante agregarParticipante;
 
     public VentanaAgregarParticipante(AgregarParticipante agregarParticipante){
@@ -29,6 +30,7 @@ public class VentanaAgregarParticipante extends JFrame{
         this.nombre.setText("");
         this.telefono.setText("");
         this.region.setText("China");
+        this.email = new JTextField(10);
         JPanel contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
         contentPane.setLayout(new FlowLayout());
@@ -38,6 +40,8 @@ public class VentanaAgregarParticipante extends JFrame{
         contentPane.add(telefono);
         contentPane.add(new JLabel("Region: "));
         contentPane.add(region);
+        contentPane.add(new JLabel("Email: "));
+        contentPane.add(email);
         JButton botonCargar = new JButton("Cargar");
         botonCargar.addActionListener(e -> {
             try {
@@ -53,9 +57,9 @@ public class VentanaAgregarParticipante extends JFrame{
         setVisible(true);
     }
     private void onBotonCargar() throws SQLException {
-        boolean isValid = this.agregarParticipante.validarCampos(nombre.getText(), telefono.getText(), region.getText());
+        boolean isValid = this.agregarParticipante.validarCampos(nombre.getText(), telefono.getText(), region.getText(), email.getText());
         if (isValid){
-            this.agregarParticipante.agregar(nombre.getText(), telefono.getText(), region.getText());
+            this.agregarParticipante.agregar(nombre.getText(), telefono.getText(), region.getText(), email.getText());
             this.limpiarCampos();
         }
     }
@@ -63,5 +67,6 @@ public class VentanaAgregarParticipante extends JFrame{
         this.nombre.setText("");
         this.telefono.setText("");
         this.region.setText("");
+        this.email.setText("");
     }
 }
