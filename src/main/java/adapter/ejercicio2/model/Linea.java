@@ -12,7 +12,7 @@ class Linea implements Figura {
     }
 
     @Override
-    public void dibujar(Graphics2D g2d) {
-        g2d.drawLine(coordenada.x(), coordenada.y(), coordenada.x() + longitud, coordenada.y());
+    public void dibujar(Panel panel) {
+        panel.dibujarLinea(coordenada.x(), coordenada.y(), coordenada.x() + longitud, coordenada.y());
     }
 }

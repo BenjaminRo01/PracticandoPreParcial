@@ -12,7 +12,7 @@ public class Dibujo implements Figura {
     }
 
     @Override
-    public void dibujar(Graphics2D g2d) {
-        this.figuras.stream().forEach(figura -> figura.dibujar(g2d));
+    public void dibujar(Panel panel) {
+        this.figuras.stream().forEach(figura -> figura.dibujar(panel));
     }
 }

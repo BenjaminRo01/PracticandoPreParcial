@@ -17,10 +17,10 @@ class Canvas extends JPanel {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        Graphics2D g2d = (Graphics2D) g;
+        Panel panel = new PanelAdapter((Graphics2D) g);
 
         for (Figura figura : figuras) {
-            figura.dibujar(g2d);
+            figura.dibujar(panel);
         }
     }
 }
