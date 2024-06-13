@@ -1,6 +1,6 @@
-package ejercicio3.ui;
+package aop.ejercicio.ui;
 
-import ejercicio3.model.ConcursoManager;
+import aop.ejercicio.model.ConcursoManager;
 
 import javax.swing.*;
 import javax.swing.GroupLayout.Alignment;

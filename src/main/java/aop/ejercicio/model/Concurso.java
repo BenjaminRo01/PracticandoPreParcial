@@ -1,4 +1,4 @@
-package ejercicio3.model;
+package aop.ejercicio.model;
 
 import java.time.LocalDate;
 

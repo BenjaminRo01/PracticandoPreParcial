@@ -1,8 +1,8 @@
-package ejercicio3.persistent;
+package aop.ejercicio.persistent;
 
-import ejercicio3.model.Concurso;
-import ejercicio3.model.Inscripcion;
-import ejercicio3.model.InscripcionDAO;
+import aop.ejercicio.model.Concurso;
+import aop.ejercicio.model.Inscripcion;
+import aop.ejercicio.model.InscripcionDAO;
 
 import java.io.IOException;
 import java.nio.file.Files;

@@ -1,9 +1,11 @@
-package ejercicio3.main;
+package aop.ejercicio.main;
 
-import ejercicio3.model.ConcursoManager;
-import ejercicio3.persistent.ConcursoJdbcDAO;
-import ejercicio3.persistent.InscripcionJdbcDAO;
-import ejercicio3.ui.RadioCompetition;
+import aop.ejercicio.model.ConcursoManager;
+import aop.ejercicio.persistent.ConcursoJdbcDAO;
+import aop.ejercicio.persistent.ConcursoTxtDAO;
+import aop.ejercicio.persistent.InscripcionJdbcDAO;
+import aop.ejercicio.persistent.InscripcionTxtDAO;
+import aop.ejercicio.ui.RadioCompetition;
 
 import javax.swing.*;
 
@@ -29,13 +31,13 @@ public class Main {
         });
     }
     private void start() {
-//        new RadioCompetition(
-//                new ConcursoManager(
-//                        new ConcursoTxtDAO(PATH_FILE_CONCURSOS_TXT),
-//                        new InscripcionTxtDAO(PATH_FILE_INSCRIPTOS_TXT)));
         new RadioCompetition(
                 new ConcursoManager(
-                        new ConcursoJdbcDAO(URL_LOCALHOST, USER_HOST, USER_PWD),
-                        new InscripcionJdbcDAO(URL_LOCALHOST, USER_HOST, USER_PWD)));
+                        new ConcursoTxtDAO(PATH_FILE_CONCURSOS_TXT),
+                        new InscripcionTxtDAO(PATH_FILE_INSCRIPTOS_TXT)));
+//        new RadioCompetition(
+//                new ConcursoManager(
+//                        new ConcursoJdbcDAO(URL_LOCALHOST, USER_HOST, USER_PWD),
+//                        new InscripcionJdbcDAO(URL_LOCALHOST, USER_HOST, USER_PWD)));
     }
 }

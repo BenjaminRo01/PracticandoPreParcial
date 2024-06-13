@@ -1,7 +1,9 @@
-package ejercicio3.persistent;
+package aop.ejercicio.persistent;
 
-import ejercicio3.model.Concurso;
-import ejercicio3.model.ConcursoDAO;
+
+
+import aop.ejercicio.model.Concurso;
+import aop.ejercicio.model.ConcursoDAO;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

@@ -1,0 +1,2 @@
+"todosLosConcursos","Sin parametros","2024/06/12 21:41:39"
+"saveInscription","Kim|Long|23234040|kim@example.com|4040-606060|Concurso A|","2024/06/12 21:42:02"
